@@ -1,0 +1,302 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: montserrat;
+}
+.menu-area {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: black;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+}
+.nav {
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 15%;
+}
+.logo {
+	flex: 1 1 auto;
+	margin-left: 10%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 25px;
+}
+a {
+	margin: 15px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	color: blue;
+}
+
+#home {
+	// position: relative;
+	background-image: url("../assets/img/home-bg.PNG");
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	// z-index: -1;
+}
+
+// #home::after{
+// 	content: "";
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	height: 100%;
+// 	width: 100%;
+// 	background-color:  #5495DE;
+// 	opacity: 0.4;
+// 	z-index: -1;
+// 	}
+
+
+
+.content a:hover{
+	background: #5495DE;
+	cursor: pointer !important;
+}
+/* 
+#home::after{
+	background: black;
+	opacity: .3;
+} */
+#home .content {
+	width: 100%;
+}
+#home .content h1 {
+	font-size: 60px;
+	margin-bottom: 10px;
+	margin-top: -5%;
+	color: #fff;
+	
+}
+
+#home .content h2 {
+	font-size: 40px;
+	margin: 10px 0;
+	color: #fff;
+	
+}
+#home .content p {
+	width: 50%;
+	margin: auto;
+	line-height: 1.6;
+	color: #fff;
+	margin-bottom: 8%;
+}
+#about, #portfolio, #services, #contact {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 100vh;
+}
+.content {
+	width: 80%;
+	height: 100%;
+	padding: 15% 0;
+}
+.content h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.content p {
+	font-size: 24px;
+	line-height: 50px;
+}
+.content .home-btn{
+	text-decoration: none;
+	padding: 15px 20px;
+	border: 2px solid white;
+}
+.content .home-btn:hover{
+	color: white;
+	background: #5495DE;
+	border: none;
+}
+
+@media (max-width: 800px) {
+	.logo {
+		text-align: center;
+	}
+	.nav {
+		margin: 0;
+		padding: 0;
+	}
+	.nav a {
+		font-size: 10px;
+		margin: 10px;
+	}
+	#home .content h1 {
+		font-size: 30px;
+	}
+	#home .content p {
+		width: 90%;
+		font-size: 16px;
+	}
+	.content {
+		padding: 50% 0;
+	}
+	#about, #portfolio, #services, #contact {
+		flex-direction: column;
+		padding: 180px 0;
+	}
+	#portfolio .content {
+		padding: 96px 0;
+	}
+}
+
+/* About Section */
+
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+  
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+  }
+  
+  .about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #474e5d;
+	color: white;
+  }
+  .about-section p{
+	  font-size: 20px;
+  }
+  
+  .container {
+	padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .title {
+	color: grey;
+  }
+  
+  .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  .button:hover {
+	background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+
+
+//   Team Section
+
+.custom-padding {
+	padding: 45px 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.socials a {
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 5px;
+	color: #fff;
+	display: inline-block;
+	border: 1px solid #fff;
+	height: 30px;
+	width: 30px;
+}
+.team-area h2 {
+	text-align: center;
+	font-weight: 700;
+	margin-top: 15px;
+	color: #000;
+}
+.team-area h2 span {
+	display: block;
+	font-weight: 300;
+	margin-top: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.socials {
+	margin-top: -27px;
+	position: relative;
+	z-index: 2;
+	border-radius: 25px;
+	background: orange;
+	text-align: center;
+	padding: 5px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.socials a:hover {
+	background: #fff;
+	color: #000;
+	transition: .7s;
+}
+@media only screen and (max-width: 767px) {
+	.team-area {
+		margin-bottom: 30px;
+	}
+	.team-area img {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.team-area {
+		margin-bottom: 30px;
+	}
+	.team-area img {
+		width: 100%;
+	}
+}
