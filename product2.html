@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/homepage.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/product.css" rel="stylesheet">
+        <title>Products</title>
+    </head>
+
+    <body style="background: #DDDDDD;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><span>OL.</span>Brand</a> <button
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                    type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="getstarted" href="./product.html">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br>
+        <br>
+        <br>
+        <br>
+        <div class="text-center">
+            <h1> Our Products </h1>
+            <span>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder </span>
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+            </div>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container">
+            <div class="filterDiv cars">BMW</div>
+            <div class="filterDiv colors fruits">Orange</div>
+            <div class="filterDiv cars">Volvo</div>
+            <div class="filterDiv colors">Red</div>
+            <div class="filterDiv cars animals">Mustang</div>
+            <div class="filterDiv colors">Blue</div>
+            <div class="filterDiv animals">Cat</div>
+            <div class="filterDiv animals">Dog</div>
+            <div class="filterDiv fruits">Melon</div>
+            <div class="filterDiv fruits animals">Kiwi</div>
+            <div class="filterDiv fruits">Banana</div>
+            <div class="filterDiv fruits">Lemon</div>
+            <div class="filterDiv animals">Cow</div>
+        </div>
+        <div class="products-section">
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+        </script>
+        <script type="text/javascript" src="./scripts/data.js"></script>
+    </body>
+
+</html>

@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/header.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <!-- <link href="css/header.css" rel="stylesheet"> -->
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="./css/homepage.css" rel="stylesheet">
+        <title>Contact Us || OLB</title>
+    </head>
 
-    <title>Contact Us || OLB</title>
-</head>
-
-<body>
-    <!-- <nav class="navbar">
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><span>OL.</span>Brand</a> <button
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                    type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="getstarted" href="./product.html">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar">
         <div class="container">
             <section class="wrapper">
                 <a href="./index.html" class="brand-link"><img src="./assets/img/olb-logo2.png" alt=""></a>
@@ -33,44 +66,86 @@
             </section>
         </div>
     </nav> -->
-    <section id="contact">
-        <div class="contact-box">
-            <div class="contact-links">
-                <h2>CONTACT US</h2>
-                <div class="links">
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+        <section id="contact">
+            <div class="contact-box">
+                <div class="contact-links">
+                    <h2>CONTACT US</h2><br>
+                    <p>Tel: +250782075217</p>
+                    <p><a href="mailto:isaackomeza@gmail.com">isaac@oneloyaltybrand.com</a></p>
+                    <div class="links">
+
+                        <div class="link">
+
+                            <a href="https://www.linkedin.com/company/one-loyalty-brand/" target="_blank"><img
+                                    src="https://img.icons8.com/color/50/000000/linkedin.png" /></a>
+
+                        </div>
+
+                        <div class="link">
+
+                            <a><img src="https://img.icons8.com/color/48/000000/facebook.png" /></a>
+
+                        </div>
+
+                        <div class="link">
+
+                            <a><img src="https://img.icons8.com/color/50/000000/twitter-squared.png" /></a>
+
+                        </div>
+
+                        <div class="link">
+
+                            <a><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" /></a>
+
+                        </div>
+
                     </div>
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
-                    </div>
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
-                    </div>
-                    <div class="link">
-                        <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
-                    </div>
+
                 </div>
+
+                <div class="contact-form-wrapper">
+
+                    <form>
+
+                        <div class="form-item">
+
+                            <input type="text" name="sender" required="">
+
+                            <label>Name:</label>
+
+                        </div>
+
+                        <div class="form-item">
+
+                            <input type="text" name="email" required="">
+
+                            <label>Email:</label>
+
+                        </div>
+
+                        <div class="form-item">
+
+                            <textarea class="" name="message" required=""></textarea>
+
+                            <label>Message:</label>
+
+                        </div>
+
+                        <button class="submit-btn">Send</button>
+
+                    </form>
+
+                </div>
+
             </div>
-            <div class="contact-form-wrapper">
-                <form>
-                    <div class="form-item">
-                        <input type="text" name="sender" required="">
-                        <label>Name:</label>
-                    </div>
-                    <div class="form-item">
-                        <input type="text" name="email" required="">
-                        <label>Email:</label>
-                    </div>
-                    <div class="form-item">
-                        <textarea class="" name="message" required=""></textarea>
-                        <label>Message:</label>
-                    </div>
-                    <button class="submit-btn">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
-</body>
+
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+        </script>
+    </body>
 
 </html>

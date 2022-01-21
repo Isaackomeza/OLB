@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--divinectorweb.com-->
+    <!--www.divinectorweb.com-->
 
-<head>
-    <meta charset="UTF-8">
-    <title>One Loyalty Brand || O L B</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+        <link href="./css/homepage.css" rel="stylesheet">
+        <link style="border-radius: 50%;" rel="shortcut icon" type="image/jpg" href="./assets/img/olb-logo.png" />
+        <title>O L B || One Loyalty Brand</title>
+    </head>
 
-<body>
-
-    <nav class="navbar">
-        <div class="container">
-            <section class="wrapper">
-                <a href="./index.html" class="brand-link"><img src="./assets/img/olb-logo2.png" alt=""></a>
-                <!-- <h1 class="brand"></h1> -->
-                <button type="button" class="burger" id="burger">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-                <div class="menu" id="menu">
-                    <ul class="menu-inner">
-                        <li class="menu-item"><a href="./index.html" class="menu-link ">Home</a></li>
-                        <li class="menu-item"><a href="./about.html" class="menu-link">About Us</a></li>
-                        <li class="menu-item"><a href="./product.html" class="menu-link">Products</a></li>
-                        <li class="menu-item"><a href="./contact.html" class="menu-link">Contact us</a></li>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><span>OL.</span>Brand</a> <button
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                    type="button"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="getstarted" href="./product.html">Shop</a>
+                        </li>
                     </ul>
                 </div>
-            </section>
+            </div>
+        </nav>
+        <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+            <div class="carousel-indicators">
+                <button aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2"
+                    data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button
+                    aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/2S3RGgyP/4.jpg"> -->
+                    <!-- <img alt="..." class="d-block w-100" src="./assets/img/Rwandamain.jpg"> -->
+                    <img alt="..." class="d-block w-100" src="./assets/img/bg-2.jpg">
+                    <div class="carousel-caption">
+                        <h5 class="animated fadeInDown" style="animation-delay: 1s">ONE LOYALTY BRAND</h5>
+                        <h2 class="animated fadeInDown" style="animation-delay: 1s">e-Business Group Ltd</h2><br>
+                        <p class="animated fadeInUp d-block" style="animation-delay: 2s">We strive to offer our
+                            customers the best available selection at the lowest possible prices, and the utmost
+                            convenience.
+                        </p>
+                        <br>
+                        <p class="animated fadeInUp" style="animation-delay: 3s"><a href="./product.html">Our
+                                Products</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <img alt="..." class="d-block w-100" src="https://i.postimg.cc/2S3RGgyP/4.jpg"> -->
+                    <img alt="..." class="d-block w-100" src="./assets/img/Rwandamain.jpg">
+                    <div class="carousel-caption">
+                        <h5 class="animated fadeInDown" style="animation-delay: 1s">Our Vision</h5><br>
+                        <p class="animated fadeInUp  d-block" style="animation-delay: 2s">We want to be an outstanding
+                            company
+                            that deliver made in Rwanda Products to the local and Global market. Our loyalty is a brand
+                            to
+                            the nation & the international market. </p>
+                        <br>
+                        <p class="animated fadeInUp" style="animation-delay: 3s"><a href="./about.html">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" src="./assets/img/bg-3.jpg">
+                    <div class="carousel-caption">
+                        <h5 class="animated fadeInDown" style="animation-delay: 1s">Our Mission</h5><br>
+                        <p class="animated fadeInUp d-block" style="animation-delay: 2s">We aim to sell and deliver good
+                            and unique services through made in Rwanda Products. Our product’s quality, standard, and
+                            use of technology, help us to globalize the market.
+                        </p>
+                        <br>
+                        <p class="animated fadeInUp" style="animation-delay: 3s"><a href="./about.html">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+            </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span
+                    class="visually-hidden">Previous</span></button> <button class="carousel-control-next"
+                data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true"
+                    class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
         </div>
-    </nav>
-
-    <!-- <div class="menu-area">
-        <a class="logo" href="#">O L B</a>
-        <ul class="nav">
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="./about.html">About</a>
-            </li>
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="#services">Service</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div> -->
-    <section id="home">
-        <div class="content">
-            <h1>ONE LOYALTY BRAND </h1>
-            <h2>e-Business Group Ltd</h2>
-            <p>Our aim is promoting made in Rwanda products nationwide and Internationally.</p>
-            <!-- <span><a href="./product.html">See Our Products</a></span> -->
-            <a class="home-btn" href="./product.html">See Our Products</a>
-        </div>
-    </section>
-    <script type="text/javascript" src="./scripts/header.js"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+        </script>
+    </body>
 
 </html>
