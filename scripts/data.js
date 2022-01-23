@@ -3,7 +3,7 @@ const productsUI = document.querySelector('.products-section');
 const products = [
     {
         id: 1,
-        category: 'Bags',
+        category: 'bags',
         name: 'The wonderful Bag',
         description: 'Wonderful Bag for machines and students at school. The bag is so comfortable because it is not that heavy',
         img: './assets/img/bag1.jpg',
@@ -11,27 +11,27 @@ const products = [
     },
     {
         id: 2,
-        category: 'Bags',
-        name: 'The wonderful Bag',
-        description: 'Wonderful Bag for machines and students at school. The bag is so comfortable because it is not that heavy',
-        img: './assets/img/bag1.jpg',
-        price: '12 $'
+        category: 'jewelry',
+        name: 'Banana leaf Basket',
+        description: 'Black and gold toned basket 12.5" x 5" Single piece / work Made in Rwanda Free shipping Weight 0.90 LB',
+        img: './assets/img/basket1.jpg',
+        price: '3 $'
     },
     {
         id: 3,
-        category: 'Bags',
-        name: 'The wonderful Bag',
-        description: 'Wonderful Bag for machines and students at school. The bag is so comfortable because it is not that heavy',
-        img: './assets/img/bag1.jpg',
-        price: '12 $'
+        category: 'jewelry',
+        name: 'Baskets',
+        description: 'The wonderful Baskets includes colorful sisal bowls and delicate Agaseke Peace Baskets, which are a wonderful symbol of reconciliation.',
+        img: './assets/img/basket3.jpg',
+        price: '1 = 3 $'
     },
     {
         id: 4,
-        category: 'Bags',
-        name: 'The wonderful Bag',
-        description: 'Wonderful Bag for machines and students at school. The bag is so comfortable because it is not that heavy',
-        img: './assets/img/bag1.jpg',
-        price: '12 $'
+        category: 'shoes',
+        name: 'Bathroom Shoes',
+        description: 'Bathroom Shoes that can be washed and the color still remains the same.it is so comfortable.',
+        img: './assets/img/shoe1.jpg',
+        price: '9 $'
     }
 ]
 
@@ -74,7 +74,7 @@ products.map(product => {
 filterSelection("all")
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("filterDiv");
+    x = document.getElementsByClassName("product");
     if (c == "all") c = "";
     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
     for (i = 0; i < x.length; i++) {
@@ -118,3 +118,7 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+// const category = document.getElementsByClassName(product.category)
+
+// category.addEventListener("click", filterSelection);

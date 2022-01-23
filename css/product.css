@@ -147,19 +147,20 @@ a.buy-btn:hover{
 
 
 /* .......................Filter CSS.................. */
-.container {
+.products-section {
     overflow: hidden;
   }
   
-  .filterDiv {
-    float: left;
+  .product {
+    /* float: left;
     background-color: #2196F3;
     color: #ffffff;
     width: 100px;
     line-height: 100px;
     text-align: center;
-    margin: 2px;
-    display: none; /* Hidden by default */
+    margin: 2px; */
+    display: none; 
+    /* Hidden by default */
   }
   
   /* The "show" class is added to the filtered elements */
