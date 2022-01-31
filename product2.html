@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link style="border-radius: 50%;" rel="shortcut icon" type="image/jpg" href="./assets/img/olb-logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
@@ -51,13 +52,18 @@
         <div class="text-center">
             <h1> Our Products </h1>
             <span>Lorem Ipsum, sometimes referred to as 'lipsum', is the placeholder </span>
+        </div>
+        <div class="text-center" style="margin-top: 50px;">
+            <h2>Select Product by Their Category</h2>
             <!-- Control buttons -->
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn" onclick="filterSelection('bags')"> Bags</button>
+                <button class="btn" onclick="filterSelection('bags')">Bags</button>
                 <button class="btn" onclick="filterSelection('jewelry')"> Jewelry</button>
-                <!-- <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-                <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+                <button class="btn" onclick="filterSelection('female_fashions')">Female Fashions</button>
+                <button class="btn" onclick="filterSelection('male_fashions')">Male Fashions</button>
+                <button class="btn" onclick="filterSelection('shoes')">Shoes</button>
+                <button class="btn" onclick="filterSelection('others')">Others</button>
             </div>
         </div>
 

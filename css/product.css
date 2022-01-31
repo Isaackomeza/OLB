@@ -10,10 +10,10 @@ body{
   }
 
 .products-section{
-    margin: 5%;
+    margin: 0 5% 5% 5%;
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-gap: 30px;
+    grid-gap: 25px;
 }
 
 .product{
@@ -41,7 +41,7 @@ body{
   @media screen and (min-width: 767px) and (max-width: 1250px) {
     /* @media only screen and (max-width: 767px) and (min-width: 1080px) { */
         .products-section{
-            margin: 5%;
+            margin: 0 5% 5% 5%;
             display: grid;
             grid-template-columns: 48% 48%;
             /* grid-gap: 30px; */
@@ -152,14 +152,7 @@ a.buy-btn:hover{
   }
   
   .product {
-    /* float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px; */
-    display: none; 
+    /* display: none;  */
     /* Hidden by default */
   }
   
@@ -187,3 +180,19 @@ a.buy-btn:hover{
     background-color: #666;
     color: white;
   }
+ 
+      
+  @media only screen and (max-width: 767px) {
+  #myBtnContainer{
+      /* background: red;
+      min-width: 600px;
+    overflow-x: scroll; */
+    margin: 4px, 4px;
+    padding: 4px;
+    /* background-color: #08c708; */
+    width: 700px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+}
